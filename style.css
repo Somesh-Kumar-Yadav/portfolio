@@ -44,6 +44,7 @@ nav .navbar {
 	justify-content: space-between;
 	align-items: center;
 	margin: auto;
+	margin-top: 0;
 }
 nav .navbar .logo a {
 	font-weight: 500;
