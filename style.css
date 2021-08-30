@@ -34,7 +34,9 @@ nav {
 	font-family: "Ubuntu", sans-serif;
 	background: #060606;
 	margin: 0;
-	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 /* nav.sticky {
 	background: #131927;
