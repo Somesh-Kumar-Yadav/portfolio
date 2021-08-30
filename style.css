@@ -35,11 +35,11 @@ nav {
 	background: #060606;
 	margin-top: 0;
 }
-nav.sticky {
+/* nav.sticky {
 	background: #131927;
 	margin-top: 0;
-	padding: 13px 0;
-}
+	padding: 13px 0; 
+} */
 nav .navbar {
 	width: 90%;
 	display: flex;
