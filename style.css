@@ -24,11 +24,13 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #131927;
 }
+body {
+	margin: 0;
+}
 /* navbar styling */
 nav {
 	position: fixed;
 	width: 100%;
-	padding: 20px 0;
 	z-index: 998;
 	transition: all 0.3s ease;
 	font-family: "Ubuntu", sans-serif;
