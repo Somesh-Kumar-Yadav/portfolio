@@ -68,7 +68,7 @@ nav .navbar .menu li {
 	transition: all 0.4s ease;
 }
 .navbar .menu a:hover {
-	color: #fff;
+	color: #ccc;
 }
 nav.sticky .menu a {
 	color: #fff;
@@ -80,6 +80,10 @@ nav.sticky .menu a:hover {
 	color: #fff;
 	font-size: 18px;
 	margin: 0 6px;
+	transition: 0.5s;
+}
+.navbar .media-icons a:hover {
+	color: #ccc;
 }
 nav.sticky .media-icons a {
 	color: #fff;
@@ -195,22 +199,6 @@ section .title span {
 	position: relative;
 	padding-bottom: 8px;
 }
-section .title span::before,
-section .title span::after {
-	content: "";
-	position: absolute;
-	height: 3px;
-	width: 100%;
-	background: #131927;
-	left: 0;
-	bottom: 0;
-}
-section .title span::after {
-	bottom: -7px;
-	width: 70%;
-	left: 50%;
-	transform: translateX(-50%);
-}
 .about .about-details .left {
 	width: 45%;
 }
@@ -218,7 +206,7 @@ section .title span::after {
 	height: 400px;
 	width: 400px;
 	object-fit: cover;
-	border-radius: 12px;
+	border-radius: 50%;
 }
 .about-details .right {
 	width: 55%;
@@ -256,8 +244,8 @@ section .button button:hover {
 
 /* My Skills CSS */
 .skills {
-	background: #f0f8ff;
-	padding: 10px;
+	background: #ccc;
+	padding: 40px;
 }
 .skills .content {
 	padding: 0;
@@ -278,54 +266,11 @@ section .button button:hover {
 	font-size: 0.9rem;
 	list-style: none;
 }
-/* My Services CSS */
-.services .boxes {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.services .boxes .box {
-	margin: 20px 0;
-	width: calc(100% / 3 - 20px);
-	text-align: center;
-	border-radius: 12px;
-	padding: 30px 10px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-	cursor: default;
-	transition: all 0.4s ease;
-}
-.services .boxes .box:hover {
-	background: #131927;
-	color: #fff;
-}
-.services .boxes .box .icon {
-	height: 50px;
-	width: 50px;
-	background: #131927;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 50px;
-	font-size: 18px;
-	color: #fff;
-	margin: 0 auto 10px auto;
-	transition: all 0.4s ease;
-}
-.boxes .box:hover .icon {
-	background-color: #fff;
-	color: #131927;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p {
-	color: #0e2431;
-	transition: all 0.4s ease;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p {
-	color: #fff;
-}
+/* My Projects CSS */
+
 /* Contact Me CSS */
 .contact {
-	background: #f0f8ff;
+	background: #ccc;
 }
 .contact .content {
 	margin: 0 auto;
@@ -335,6 +280,44 @@ section .button button:hover {
 	width: 80%;
 	text-align: center;
 	margin: auto;
+}
+.contact .text .form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #0e2431;
+	background: #fff;
+	padding: 20px 30px 30px 30px;
+	border-radius: 20px;
+}
+.contact .text .form .form-top input {
+	outline: none;
+	padding: 5px 10px;
+	border: 1px solid #0e2431;
+	color: #0e2431;
+	margin: 20px;
+	width: 325px;
+	border-radius: 4px;
+	height: 50px;
+	font-family: "Poppins";
+	font-size: 20px;
+}
+.contact .text .form .form-bottom textarea {
+	font-size: 20px;
+	font-family: "Poppins";
+	outline: none;
+	padding: 5px 10px;
+	border: 1px solid #0e2431;
+	color: #0e2431;
+	width: 690px;
+	border-radius: 4px;
+	height: 140px;
+}
+.contact_details {
+	color: #0e2431;
+	font-size: 16px;
+	font-family: "Poppins";
 }
 
 /* Footer CSS */
@@ -356,27 +339,26 @@ footer .text span a {
 footer .text span a:hover {
 	text-decoration: underline;
 }
-/* Scroll TO Top Button CSS */
-.scroll-button a {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	color: #fff;
-	background: #00040c;
-	padding: 7px 12px;
-	font-size: 18px;
-	border-radius: 6px;
-	box-shadow: rgba(0, 0, 0, 0.15);
-	display: none;
-}
 
 /* Responsive Media Query */
 @media (max-width: 1190px) {
 	section .content {
 		width: 85%;
 	}
+	.contact .text .form .form-top input {
+		width: 600px;
+	}
+	.contact .text .form .form-bottom textarea {
+		width: 600px;
+	}
 }
 @media (max-width: 1000px) {
+	.contact .text .form .form-top input {
+		width: 500px;
+	}
+	.contact .text .form .form-bottom textarea {
+		width: 500px;
+	}
 	.about .about-details {
 		justify-content: center;
 		flex-direction: column;
@@ -390,10 +372,6 @@ footer .text span a:hover {
 		width: 90%;
 		margin: 40px 0;
 	}
-	.services .boxes .box {
-		margin: 20px 0;
-		width: calc(100% / 2 - 20px);
-	}
 }
 @media (max-width: 900px) {
 	.about .left img {
@@ -405,6 +383,12 @@ footer .text span a:hover {
 @media (max-width: 750px) {
 	nav .navbar {
 		width: 90%;
+	}
+	.contact .text .form .form-top input {
+		width: 400px;
+	}
+	.contact .text .form .form-bottom textarea {
+		width: 400px;
 	}
 	.skills .skillz {
 		-ms-flex-wrap: wrap;
@@ -482,5 +466,11 @@ footer .text span a:hover {
 	}
 	.home .text-three {
 		font-size: 33px;
+	}
+	.contact .text .form .form-top input {
+		width: 280px;
+	}
+	.contact .text .form .form-bottom textarea {
+		width: 280px;
 	}
 }
