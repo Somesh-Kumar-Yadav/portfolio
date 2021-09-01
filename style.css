@@ -257,9 +257,10 @@ section .button button:hover {
 /* My Skills CSS */
 .skills {
 	background: #f0f8ff;
+	padding: 10px;
 }
 .skills .content {
-	padding: 40px 0;
+	padding: 0;
 }
 .skills .skillz {
 	display: flex;
