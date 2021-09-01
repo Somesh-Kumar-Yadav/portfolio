@@ -347,9 +347,11 @@ footer .text span a:hover {
 	}
 	.contact .text .form .form-top input {
 		width: 600px;
+		margin: 10px;
 	}
 	.contact .text .form .form-bottom textarea {
 		width: 600px;
+		margin: 10px;
 	}
 }
 @media (max-width: 1000px) {
