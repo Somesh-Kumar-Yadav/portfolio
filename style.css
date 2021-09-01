@@ -32,17 +32,11 @@ nav {
 	z-index: 998;
 	transition: all 0.3s ease;
 	font-family: "Ubuntu", sans-serif;
-	background: #060606;
-	margin: 0;
-	position: absolute;
-	left: 0;
-	top: 0;
 }
-/* nav.sticky {
+nav.sticky {
 	background: #131927;
-	margin-top: 0;
-	padding: 13px 0; 
-} */
+	padding: 13px 0;
+}
 nav .navbar {
 	width: 90%;
 	display: flex;
@@ -267,53 +261,22 @@ section .button button:hover {
 .skills .content {
 	padding: 40px 0;
 }
-.skills .skills-details {
+.skills .skillz {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-}
-.skills-details .text {
-	width: 50%;
-}
-.skills-details p {
-	color: #0e2431;
-	text-align: justify;
-}
-.skills .skills-details .experience {
-	display: flex;
-	align-items: center;
-	margin: 0 10px;
-}
-.skills-details .experience .num {
-	color: #0e2431;
-	font-size: 80px;
-}
-.skills-details .experience .exp {
-	color: #0e2431;
-	margin-left: 20px;
-	font-size: 18px;
-	font-weight: 500;
-	margin: 0 6px;
-}
-.skills-details .boxes {
-	width: 45%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.skills-details .box {
-	width: calc(100% / 2 - 20px);
-	margin: 20px 0;
-}
-.skills-details .boxes .topic {
-	font-size: 20px;
-	color: #131927;
-}
-.skills-details .boxes .per {
-	font-size: 60px;
-	color: #131927;
 }
 
+.skills .skillz_category_label {
+	font-weight: 800;
+	color: #36363c;
+	text-transform: uppercase;
+}
+
+.skills .skillz_category_item {
+	margin: 3px 0;
+	font-size: 0.9rem;
+	list-style: none;
+}
 /* My Services CSS */
 .services .boxes {
 	display: flex;
@@ -441,6 +404,15 @@ footer .text span a:hover {
 @media (max-width: 750px) {
 	nav .navbar {
 		width: 90%;
+	}
+	.skills .skillz {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.skills .skillz_category {
+		width: 47%;
+		margin-right: 5px;
+		margin-bottom: 25px;
 	}
 	nav .navbar .menu {
 		position: fixed;
