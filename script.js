@@ -42,10 +42,10 @@ function sendEmail() {
 	}
 	Email.send({
 		Host: "smtp.gmail.com",
-		Username: "someshkumar71524@gmail.com",
-		Password: "Mansi@123",
-		To: "portfolioccnt@gmail.com",
-		From: "someshkumar71524@gmail.com",
+		Username: "portfolioccnt@gmail.com",
+		Password: "Portfolio@123",
+		To: "someshkumar71524@gmail.com",
+		From: "portfolioccnt@gmail.com",
 		Subject: "From portfolio",
 		Body: `Name - ${name}
 		email -${email}
