@@ -4,11 +4,12 @@
 		<meta charset="UTF-8" />
 		<title>Somesh's PortFolio</title>
 		<link rel="stylesheet" href="style.css" />
-		<!-- Fontawesome CDN Link -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
 		/>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
@@ -263,15 +264,15 @@
 					<div class="topic">Reach out for a new project or to say hello</div>
 					<div class="form">
 						<div class="form-top">
-							<input type="text" placeholder="Enter Name" />
-							<input type="text" placeholder="Enter E-mail" />
+							<input id="name" type="text" placeholder="Enter Name" />
+							<input id="email" type="text" placeholder="Enter E-mail" />
 						</div>
 						<div class="form-bottom">
-							<textarea placeholder="Enter Message ..."></textarea>
+							<textarea id="message" placeholder="Enter Message ..."></textarea>
 						</div>
 					</div>
 					<div class="button">
-						<button>Send</button>
+						<button onclick="sendEmail()">Send</button>
 					</div>
 					<div class="contact_details">Email - someshkumar71524@gmail.com</div>
 					<div class="contact_details">Mobile - +91-6354136407</div>
