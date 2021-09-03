@@ -169,6 +169,17 @@ nav.sticky .menu-btn {
 	border: 2px solid transparent;
 	transition: all 0.4s ease;
 }
+.home .button button a {
+	color: #fff;
+	text-decoration: none;
+}
+.home .button button a:hover {
+	color: #131927;
+}
+.home .button button a:active,
+.home .button button a:visited {
+	color: #fff;
+}
 .home .button button:hover {
 	border-color: #131927;
 	background-color: #fff;
