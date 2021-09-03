@@ -50,5 +50,5 @@ function sendEmail() {
 		Body: `Name - ${name}
 		email -${email}
 		message -${message}`,
-	}).then((message) => alert("mail sent successfully"));
+	}).then((message) => alert("message sent successfully"));
 }
