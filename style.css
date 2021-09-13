@@ -442,6 +442,9 @@ footer .text span a:hover {
 	section {
 		padding-top: 200px;
 	}
+	.skills {
+		padding-top: 200px;
+	}
 	section .content {
 		width: 85%;
 	}
