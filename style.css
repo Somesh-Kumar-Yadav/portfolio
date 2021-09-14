@@ -420,7 +420,9 @@ section .button button:hover {
 	font-size: 16px;
 	font-family: "Poppins";
 }
-
+.contact_details a {
+	color: #36363c;
+}
 /* Footer CSS */
 footer {
 	background: #00040c;
