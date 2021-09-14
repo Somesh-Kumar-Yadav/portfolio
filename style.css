@@ -191,7 +191,6 @@ nav.sticky .menu-btn {
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
 	padding-top: 40px;
-	min-height: 95vh;
 }
 section .content {
 	width: 80%;
@@ -261,7 +260,7 @@ section .button button:hover {
 /* My Skills CSS */
 .skills {
 	background: #ccc;
-	padding: 80px;
+	padding: 40px;
 }
 .skills .content {
 	padding: 0;
@@ -283,6 +282,17 @@ section .button button:hover {
 	list-style: none;
 }
 /* My Projects CSS */
+.projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.projects a {
+	color: #0e2431;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 0 5px;
+}
 .projects_cont {
 	color: #0e2431;
 }
@@ -348,16 +358,10 @@ section .button button:hover {
 .staks .ico p {
 	font-size: 14px;
 }
-.projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 .projects a {
 	color: #0e2431;
 	text-decoration: none;
 	font-size: 24px;
-	margin: 0 5px;
 }
 .projects a div {
 	font-size: 14px;
@@ -439,12 +443,6 @@ footer .text span a:hover {
 
 /* Responsive Media Query */
 @media (max-width: 1190px) {
-	section {
-		padding-top: 200px;
-	}
-	.skills {
-		padding-top: 200px;
-	}
 	section .content {
 		width: 85%;
 	}
@@ -488,9 +486,6 @@ footer .text span a:hover {
 @media (max-width: 750px) {
 	nav .navbar {
 		width: 90%;
-	}
-	.skills {
-		padding: 60px;
 	}
 	.contact .text .form .form-top input {
 		width: 400px;
@@ -571,15 +566,6 @@ footer .text span a:hover {
 @media (max-width: 500px) {
 	.home .text-two {
 		font-size: 55px;
-	}
-	section {
-		padding-top: 40px;
-	}
-	.projects_cont .boxes .box:first-child {
-		margin-top: -10px;
-	}
-	.skills {
-		padding: 40px;
 	}
 	.home .text-three {
 		font-size: 33px;
