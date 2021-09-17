@@ -370,7 +370,7 @@ section .button button:hover {
 	color: #fff;
 }
 .boxes .box:hover .projects a {
-	color: #89b4e6;
+	color: #89b4e6 !important;
 }
 /* Contact Me CSS */
 .contact {
