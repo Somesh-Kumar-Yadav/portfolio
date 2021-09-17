@@ -361,13 +361,16 @@ section .button button:hover {
 .projects a {
 	color: #0e2431;
 	text-decoration: none;
-	font-size: 26px;
+	font-size: 26px !important;
 }
 .projects a div {
 	font-size: 14px;
 }
 .box:hover a {
 	color: #fff;
+}
+.boxes .box:hover .projects a {
+	color: #89b4e6;
 }
 /* Contact Me CSS */
 .contact {
