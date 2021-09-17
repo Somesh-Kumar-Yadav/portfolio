@@ -445,7 +445,10 @@ footer .text span a {
 footer .text span a:hover {
 	text-decoration: underline;
 }
-.boxes .box:hover .projects a {
+.boxes .box:hover .projects a i {
+	color: #89b4e6 !important;
+}
+.boxes .box:hover .projects a div {
 	color: #89b4e6 !important;
 }
 /* Responsive Media Query */
